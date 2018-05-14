@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="node_modules/@webcomponents/webcomponentsjs/webcomponents-bundle.js"></script>
+    <script type="module" src="./templates/app-header.js"></script>
+    <script type="module" src="./templates/app-footer.js"></script>
+    <script type="module" src="./kahlo-load.js"></script>
+
+    <link rel="stylesheet" href="estilo.css">
+    <title>#GreveGeral</title>
+  </head>
+  <body>
+    <app-header></app-header>
+    <kahlo-load pathname="/quando">
+      <app-main-when src="/data/quando.json"></app-main-when>
+    </kahlo-load>
+    <kahlo-load pathname="/onde">
+      <app-main-where src="/data/onde.json"></app-main-where>
+    </kahlo-load>
+    <kahlo-load pathname="/quem">
+      <app-main-who src="/data/quem.json"></app-main-who>
+    </kahlo-load>
+    <kahlo-load pathname="/porque">
+      <app-main-why src="/data/porque.json"></app-main-why>
+    </kahlo-load>
+    <app-footer></app-footer>
+  </body>
+</html>
